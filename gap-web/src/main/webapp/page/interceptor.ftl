@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>注册</title>
-<script src="https://static.zhong.com/pc/skin/js/jquery-1.11.2.js?20171030"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <form action="${config.domainHost}/wrapper/fromRequest.do" method="post">
