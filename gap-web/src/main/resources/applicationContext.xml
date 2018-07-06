@@ -35,4 +35,11 @@
 		</property>
 	</bean>
 
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/wrapper/**"/>
+			<bean class="com.ethan.gap.web.controller.interceptors.AdaptableParamsInterceptors"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
 </beans>

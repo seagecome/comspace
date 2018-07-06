@@ -41,11 +41,12 @@ public class UserRegisterController {
 		gapUserInfo.setUserMobile("18612345678");
 		gapUserInfo.setUserName("JIM");
 		
-		userInfoService.addUserInfo(gapUserInfo);
+//		userInfoService.addUserInfo(gapUserInfo);
 		
 		Map<String, Object> queryMap = new HashMap<String, Object>();
 		queryMap.put("loginId", 1);
-		UserLoginInfo userLoginInfo = userInfoService.queryUserInfo(queryMap);
+		UserLoginInfo userLoginInfo = null;
+//				userInfoService.queryUserInfo(queryMap);
 		if(userLoginInfo == null){
 			model.addAttribute("accountId", "未查询出日志");
 			model.addAttribute("accountType", "未查询出日志");

@@ -19,7 +19,7 @@ public class DefaultController {
 	@RequestMapping(value="/")
 	public String homePage(HttpServletRequest request, HttpServletResponse response, Model model){
 		model.addAttribute("config", config);
-		return "index";
+		return "interceptor";
 	}
 	
 }
